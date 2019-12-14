@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    grid-template-rows: 4 1pr;
+    grid-template-columns: 4 1pr;
+    grid-template-areas: 
+    'hdr hdr hdr hdr'
+    'lbn src src rbn '
+    'lbn res txt rbn'
+    'lbn ftr ftr rbn'
+    
+    ;
+}
+
+img{
+    width: 125px;
+}
+
