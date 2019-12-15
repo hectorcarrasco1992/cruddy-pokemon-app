@@ -7,6 +7,8 @@ body{
 
 .app{
     display: grid;
+    padding: 0;
+    margin: 0;
     grid-template-rows: 4, 1pr;
     grid-template-columns: 3 ,1pr;
     grid-template-areas: 
@@ -30,6 +32,8 @@ img{
 }
 
 .left-banner{
+    padding: 0%;
+    margin: 0%;
     grid-area: lbn;
     grid-row: 2/8;
     grid-column: 1/2;
@@ -37,6 +41,8 @@ img{
 }
 
 .right-banner{
+    padding: 0%;
+    margin: 0%;
     display: flex;
     justify-content: flex-end;
     grid-area: rbn;
@@ -65,7 +71,12 @@ img{
     
     grid-area: txt;
     grid-row: 3/4;
-    grid-column: 6/7;
+    grid-column: 2/7;
+}
+
+.result{
+    grid-row: 4/5;
+    grid-column: 2/7;
 }
 
 .footer{
@@ -73,3 +84,4 @@ img{
     grid-row: 8/9;
     grid-column: 1/8;
 }
+
