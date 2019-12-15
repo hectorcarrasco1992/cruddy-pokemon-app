@@ -222,9 +222,27 @@ a:visited {
     }
 
     input{
-        grid-column: 2/4;
+        grid-column: 2/5;
         width:100%;
         background-color: goldenrod;
+    }
+
+    .s-button{
+        width: 100%;
+        
+    }
+
+    #catch-button{
+        width:100%;
+    }
+
+    .right-banner{
+        grid-column: 7/8;
+        grid-row: 2/6;
+    }
+
+    .header{
+        background-color: indigo;
     }
 
 
