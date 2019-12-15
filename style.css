@@ -2,7 +2,8 @@ body{
     display: grid;
     margin: 0%;
     padding: 0%;
-    font-family: 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: grab;
     
     
     
@@ -113,20 +114,53 @@ img{
     background-color: red;
 }
 
+a:link {
+
+    color:#006;
+    
+    text-decoration:none;
+    
+    cursor: pointer;
+    
+    }
+
+a:visited {
+
+    color:#369;
+        
+    }
+
 @media (max-width:375px){
     .app{
         display: grid;
-        grid-column: 3,(20%, 70%, 10)%;
-        grid-row: 4,1pr;
+        
+        color:red;
+        background-image: linear-gradient( 89.7deg,  rgba(43,104,167,1) 20.9%, rgba(156,213,194,1) 77.6% );
     }
 
     .header{
         grid-row: 1/2;
-        grid-column: 1/7;
+        grid-column: repeat(auto-fit,1pr);
+        background-image: linear-gradient( 0.2deg,  rgba(51,204,255,1) 4.8%, rgba(51,102,255,1) 85.5% );
     }
 
     input{
         background-color: red;
+        grid-row: 2/3;
+        grid-column: 5/6;
+    }
+
+    .s-button{
+        grid-column: 6/7;
+    }
+
+    #catch-button{
+        grid-column: 7/8;
+    }
+
+    .text{
+        grid-row: 3/4;
+        grid-column: 4/5;
     }
 
     .right-banner{
@@ -135,8 +169,39 @@ img{
     }
 
     .left-banner{
-
+        grid-column: 1/4;
+        grid-row: 2/8;
     }
+
+    img{
+        width: 100%;
+    }
+    .result{
+        grid-row: 4/8;
+        grid-column: 4/5;
+    }
+
+    .result-pic{
+        width: 100%;
+    }
+
+    .caught{
+        grid-row: 3/5;
+        grid-column: 6/7;
+        
+    }
+
+    .footer{
+        grid-row: 8/9;
+        width: 100%;
+        height: 100%;
+        color: goldenrod;
+        font-size: 79px;
+    }
+
+   
+
+    
 }
 
 
