@@ -9,5 +9,7 @@ document.querySelector('.s-button').addEventListener('click',()=>{
 })
 
 document.querySelector('#catch-button').addEventListener('click', ()=>{
-    document.querySelector('.caught-list').innerText=searchInput
+    const newList = document.createElement('li')
+    newList.innerText = document.querySelector('input').value
+    document.querySelector('.caught-list').appendChild(newList)
 })
