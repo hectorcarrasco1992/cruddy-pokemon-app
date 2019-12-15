@@ -35,7 +35,7 @@ img{
     padding: 0%;
     margin: 0%;
     grid-area: lbn;
-    grid-row: 2/8;
+    grid-row: 2/7;
     grid-column: 1/2;
     ;
 }
@@ -78,6 +78,11 @@ img{
     grid-row: 4/5;
     grid-column: 2/7;
     
+}
+
+.caught{
+    grid-row: 6/7;
+    grid-column: 1/2;
 }
 
 #pokemon{

@@ -7,3 +7,7 @@ document.querySelector('.s-button').addEventListener('click',()=>{
 
     document.querySelector('#result-pic').src = `images/${searchInput}`
 })
+
+document.querySelector('#catch-button').addEventListener('click', ()=>{
+    document.querySelector('.caught-list').innerText=searchInput
+})
