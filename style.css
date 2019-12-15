@@ -77,6 +77,11 @@ img{
 .result{
     grid-row: 4/5;
     grid-column: 2/7;
+    
+}
+
+#pokemon{
+    width: 50%;
 }
 
 .footer{
@@ -84,4 +89,6 @@ img{
     grid-row: 8/9;
     grid-column: 1/8;
 }
+
+
 
