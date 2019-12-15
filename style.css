@@ -1,18 +1,75 @@
 body{
-    margin: 0;
-    padding: 0;
-    grid-template-rows: 4 1pr;
-    grid-template-columns: 4 1pr;
-    grid-template-areas: 
-    'hdr hdr hdr hdr'
-    'lbn src src rbn '
-    'lbn res txt rbn'
-    'lbn ftr ftr rbn'
+    display: grid;
     
-    ;
+    
+    
+}
+
+.app{
+    display: grid;
+    grid-template-rows: 4, 1pr;
+    grid-template-columns: 3 ,1pr;
+    grid-template-areas: 
+    'hdr hdr hdr hdr',
+    'lbn src but rbn',
+    'lbn res txt rbn',
+    'lbn ftr ftr rbn'
 }
 
 img{
-    width: 125px;
+    width: 100%;
 }
 
+.header{
+    display: flex;
+    justify-content: center;
+    grid-area: hdr;
+    grid-column: 1/8;
+    grid-row: 1/2;
+
+}
+
+.left-banner{
+    grid-area: lbn;
+    grid-row: 2/8;
+    grid-column: 1/2;
+    ;
+}
+
+.right-banner{
+    display: flex;
+    justify-content: flex-end;
+    grid-area: rbn;
+    grid-column: 7/8;
+    grid-row: 2/8;
+}
+
+.search{
+    grid-area: src;
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.search-button{
+    grid-area: but;
+    grid-column: 4/5;
+    grid-row: 2/3
+}
+
+.Catch{
+    grid-row:2/3 ;
+    grid-column: 5/6;
+}
+
+.text{
+    
+    grid-area: txt;
+    grid-row: 3/4;
+    grid-column: 6/7;
+}
+
+.footer{
+    grid-area: ftr; 
+    grid-row: 8/9;
+    grid-column: 1/8;
+}
