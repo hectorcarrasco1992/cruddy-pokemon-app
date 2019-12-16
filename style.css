@@ -13,13 +13,13 @@ body{
     display: grid;
     /* padding: 0;
     margin: 0; */
-    grid-template-rows: 4, 1pr;
-    grid-template-columns: 4 ,1pr;
-    grid-template-areas: 
+    grid-template-rows: 6, 1pr;
+    grid-template-columns: 5 ,1pr;
+    /* grid-template-areas: 
     'hdr hdr hdr hdr',
     'lbn src but rbn',
-    'lbn res txt rbn',
-    'lbn ftr ftr rbn';
+    'lbn res txt rbn', */
+    /* 'lbn ftr ftr rbn'; */
     background-image: linear-gradient( 70.6deg,  rgba(250,23,23,0.77) 7.1%, rgba(233,241,16,1) 68.8% );
     
 }
@@ -32,7 +32,7 @@ img{
     display: flex;
     justify-content: center;
     grid-area: hdr;
-    grid-column: 1/8;
+    grid-column: 1/7;
     grid-row: 1/2;
     background-color: red;
 
@@ -52,40 +52,40 @@ img{
 .right-banner{
     padding: 0%;
     margin: 0%;
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
     grid-area: rbn;
-    grid-column: 7/8;
-    grid-row: 2/8;
+    grid-column: 6/7;
+    grid-row: 2/6;
 }
 
 .search{
     grid-area: src;
-    grid-row: 2/3;
+    grid-row: 3/4;
     grid-column: 3/4;
 }
 
 .search-button{
     grid-area: but;
     grid-column: 4/5;
-    grid-row: 2/3
+    grid-row: 3/4
 }
 
-.Catch{
+/* .Catch{
     grid-row:2/3 ;
     grid-column: 5/6;
-}
+} */
 
 .text{
     
     grid-area: txt;
-    grid-row: 3/4;
-    grid-column: 2/7;
+    grid-row: 2/3;
+    grid-column: 2/6;
 }
 
 .result{
-    grid-row: 4/5;
-    grid-column: 2/7;
+    grid-row: 4/6;
+    grid-column: 2/4;
     
 }
 
@@ -93,8 +93,8 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    grid-row: 6/7;
-    grid-column: 1/2;
+    grid-row: 3/4;
+    grid-column: 5/6;
 }
 
 #caught-text{
@@ -107,11 +107,18 @@ img{
     
 }
 
+.starters{
+    height: 100%;
+}
+
 .footer{
+    display: flex;
+    justify-content: space-evenly;
     grid-area: ftr; 
     grid-row: 9/10;
     grid-column: 1/8;
     background-color: red;
+    font-size: 30px;
 }
 
 a {
@@ -129,6 +136,12 @@ a:visited {
     color:#369;
         
     }
+
+    #foot-pic{
+        width: 12%;
+        height: 50%;
+    }
+    
 
 @media (max-width:375px){
     .app{
@@ -150,17 +163,26 @@ a:visited {
         grid-column: 5/6;
     }
 
+    .search{
+        grid-row: 2/3;
+        grid-column: 4/5;
+    }
+
+    .search-button{
+        grid-row: 2/3;
+        grid-column: 5/6;
+    }
+
     .s-button{
         grid-column: 6/7;
     }
 
-    #catch-button{
-        grid-column: 7/8;
-    }
+    /* #catch-button{
+        grid-column: 5/6;
+    } */
 
     .text{
-        grid-row: 3/4;
-        grid-column: 4/5;
+        display: none;
     }
 
     .right-banner{
@@ -169,40 +191,47 @@ a:visited {
     }
 
     .left-banner{
-        grid-column: 1/4;
-        grid-row: 2/8;
+        grid-column: 1/2;
+        grid-row: 2/5;
     }
 
     /* img{
         width: 100%;
     } */
     .result{
-        grid-row: 4/8;
+        grid-row: 4/6;
         grid-column: 4/5;
     }
 
     .result-pic{
         width: 100%;
+        grid-row: 4/6;
     }
 
     .caught{
-        grid-row: 3/5;
-        grid-column: 6/7;
+        grid-row: 3/4;
+        grid-column: 5/6;
         
     }
 
+    #foot-pic{
+        width: 100%;
+    }
+
     .footer{
-        grid-row: 8/9;
+        grid-row: 6/;
         width: 100%;
         height: 100%;
         color: goldenrod;
-        font-size: 79px;
+        font-size: 50px;
     }
 
    
 
     
 }
+
+
 
 @media (max-width:1024px)and (min-width:376px){
     .app{
@@ -229,12 +258,17 @@ a:visited {
         
     }
 
+    .search-button{
+        grid-row: 2/3;
+    }
+
     input{
         background-color: goldenrod;
         width: 100%;
     }
 
     .s-button{
+        grid-row: 2/3;
         grid-column: 4/5;
         background-color: lightblue;
     }
@@ -282,15 +316,15 @@ a:visited {
        display: flex;
        flex-direction: row;
        justify-content: space-evenly; 
-       grid-row: 6/7;
+       grid-row: 5/6;
         width: 100%;
         
-        color: goldenrod;
+        
         font-size: 30px;
     }
 
     #foot-pic{
-        width: 12%;
+        width: 10%;
         height: 50%;
     }
     
