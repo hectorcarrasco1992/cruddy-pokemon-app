@@ -1,6 +1,6 @@
 document.querySelector('.s-button').addEventListener('click',()=>{
     const searchInput = document.querySelector('input').value
-    
+
 
     document.querySelector('#result-pic').src = `images/${searchInput}`
 })
