@@ -1,3 +1,12 @@
+const images = document.querySelectorAll('img')
+document.querySelector('.clear').addEventListener('click', ()=>{
+    for(let i = 0; i < images.length; i++){
+        images[i].style.width = '0px'
+
+    }
+})
+
+
 document.querySelector('.s-button').addEventListener('click',()=>{
     const searchInput = document.querySelector('input').value
 
