@@ -11,7 +11,7 @@ document.querySelector('.s-button').addEventListener('click',()=>{
     const searchInput = document.querySelector('input').value
 
 
-    document.querySelector('#result-pic').src = `images/${searchInput}`
+    document.querySelector('#result-pic').src = `images/${searchInput}.png`
 })
 
 document.querySelector('#catch-button').addEventListener('click', ()=>{
